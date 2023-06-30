@@ -13,7 +13,7 @@ init_tables:
 # keeping memory in check if there are issues writing to ClickHouse.
 # Check the "jaeger_clickhouse_discarded_spans" metric to keep track of discards.
 # If 0, no limit is set. Default 10_000_000.
-max_span_count: 100_000
+max_span_count:
 # Batch write size. Default 10_000.
 batch_write_size: 100_000
 # Batch flush interval. Default 5s.
