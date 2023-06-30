@@ -6,4 +6,4 @@ global:
 scrape_configs:
   - job_name: jaeger-collector
     static_configs:
-    - targets: ['147.28.154.61:14269']
+    - targets: ['139.178.86.205:14269']
