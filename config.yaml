@@ -32,7 +32,7 @@ database:
 # Default is empty. See guide-multitenancy.md for more information.
 tenant:
 # Endpoint for serving prometheus metrics. Default localhost:9090.
-metrics_endpoint: 147.75.47.191:9090
+metrics_endpoint: 147.28.149.41:9090
 # Whether to use sql scripts supporting replication and sharding.
 # Replication can be used only on database with Atomic engine.
 # Default false.
