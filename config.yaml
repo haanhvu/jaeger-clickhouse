@@ -1,4 +1,4 @@
-address: 147.28.149.209:9000
+address: 147.28.155.99:9000
 # Directory with .sql files to run at plugin startup, mainly for integration tests.
 # Depending on the value of "init_tables", this can be run as a
 # replacement or supplement to creating default tables for span storage.
@@ -32,7 +32,7 @@ database:
 # Default is empty. See guide-multitenancy.md for more information.
 tenant:
 # Endpoint for serving prometheus metrics. Default localhost:9090.
-metrics_endpoint: 147.28.149.159:9090
+metrics_endpoint: 147.28.141.245:9090
 # Whether to use sql scripts supporting replication and sharding.
 # Replication can be used only on database with Atomic engine.
 # Default false.
