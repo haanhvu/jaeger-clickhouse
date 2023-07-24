@@ -1,4 +1,4 @@
-address: 147.75.55.233:9000
+address: 145.40.102.197:9000
 # Directory with .sql files to run at plugin startup, mainly for integration tests.
 # Depending on the value of "init_tables", this can be run as a
 # replacement or supplement to creating default tables for span storage.
@@ -19,7 +19,7 @@ batch_write_size: 100_000
 # Batch flush interval. Default 5s.
 batch_flush_interval:
 # Encoding of stored data. Either json or protobuf. Default json.
-encoding:
+encoding: protobuf
 # Path to CA TLS certificate.
 ca_file:
 # Username for connection to ClickHouse. Default is "default".
