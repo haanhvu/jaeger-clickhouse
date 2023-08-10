@@ -38,7 +38,7 @@ e2e-tests:
 
 .PHONY: run
 run:
-	docker run --network host --name jaeger -e JAEGER_DISABLED=true -p 147.28.148.205:4317:4317 -p 147.28.148.205:14269:14269 -v "${PWD}:/data" -e SPAN_STORAGE_TYPE=grpc-plugin jaegertracing/jaeger-collector --collector.queue-size=100000 --collector.num-workers=100 --grpc-storage-plugin.binary=/data/jaeger-clickhouse-$(GOOS)-$(GOARCH) --grpc-storage-plugin.configuration-file=/data/config.yaml --grpc-storage-plugin.log-level=debug
+	docker run --network host --name jaeger -e JAEGER_DISABLED=true -p 147.75.47.51:4317:4317 -p 147.75.47.51:14269:14269 -v "${PWD}:/data" -e SPAN_STORAGE_TYPE=grpc-plugin jaegertracing/jaeger-collector --collector.queue-size=100000 --collector.num-workers=100 --grpc-storage-plugin.binary=/data/jaeger-clickhouse-$(GOOS)-$(GOARCH) --grpc-storage-plugin.configuration-file=/data/config.yaml --grpc-storage-plugin.log-level=debug
 
 .PHONY: run-hotrod
 run-hotrod:
